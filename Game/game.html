@@ -20,22 +20,11 @@
             background: black;
         }
 
-        #cannon {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 270px;
-            left: 150px;
-            background-image: url(./images/m1.png);
-        }
+         
 
         #alien {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 20px;
-            left: 80px;
-            background-image: url(.images/m11.png);
+            margin-top: 20px;
+            margin-left: 80px;
         }
 
         #missile {
@@ -45,14 +34,22 @@
             top: 270px;
             left: 150px;
         }
+
+        .cannon-image{
+            margin-top:270px;
+            margin-left: 140px;
+        }
     </style>
 </head>
 
 <body>
+    
     <div id="stage">
-        <div id="background"></div>
-        <div id="cannon"></div>
-        <div id="missile"></div>
+        <div id="background">
+            <img id="alien" src="./images/m11.png" width="20px" height="20px">
+            <img src="./images/m1.png" id="cannon" class="cannon-image" alt="" width="20px" height="20px">
+        </div>
+        
         <div id="alien"></div>
 
     </div>
